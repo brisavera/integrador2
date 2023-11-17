@@ -1,0 +1,59 @@
+@media (max-width: 992px) {
+  .h1 h1 {
+    font-size: 300px;
+  }
+  #cards-section h2 {
+    font-size: 60px;
+  }
+
+  .card {
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav ul {
+    background-color: rgba(231, 231, 228, 255);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    top: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 90%;
+    padding: 30px 10px;
+    overflow: hidden;
+  }
+  .navbar {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .nav i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbar {
+    display: flex;
+  }
+
+  .h1 h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 300px;
+  }
+
+  #about p {
+    font-size: 13px;
+  }
+
+  #cards-section h2 {
+    font-size: 40px;
+  }
+}

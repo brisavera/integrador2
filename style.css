@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(231, 231, 228, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  height: 90px;
+  width: 100%;
+  padding: 0px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(231, 231, 228, 255);
+  border: 1px solid #424b9b;
+  z-index: 1;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 100px;
+}
+
+.logo-estudio img {
+  width: 50%;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-size: large;
+  position: relative;
+  padding: 0;
+}
+
+.navbar a:hover {
+  color: rgba(66, 75, 155, 255);
+  transition: all 0.5s;
+}
+
+.navbar a::after {
+  content: "";
+  background-color: #424b9b;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.15s ease;
+  transform-origin: bottom right;
+}
+
+.navbar a:hover::after {
+  color: rgba(66, 75, 155, 255);
+  transition: all 0.5s;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#hero {
+  display: flex;
+  padding: 70px 0px;
+}
+
+.h1 h1 {
+  font-size: 600px;
+  color: #000000;
+}
+
+.h1 h1:hover {
+  color: rgba(66, 75, 155, 255);
+  transform: scaleX(1);
+  transition: all 0.9s;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.h1 h1 {
+  animation: tracking-in-contract-bck 4s linear;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 850px;
+}
+
+#about p {
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+}
+
+#cards-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  padding: 70px 0px;
+  width: 95%;
+}
+
+#cards-section h2 {
+  font-family: "Raleway", sans-serif;
+  color: #424b9b;
+  font-size: 100px;
+  text-shadow: #000000;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+
+  font-family: "Prata", serif;
+  color: #1e213e;
+  padding: 20px;
+  border-radius: 20px;
+  opacity: 50%;
+  background-color: gainsboro;
+
+  box-shadow: #000000 0px 6px 12px -2px, #000000 0px 3px 7px -3px;
+}
+
+.card img {
+  border-radius: 5%;
+}
+
+.card h3 {
+  font-family: "Abril Fatface";
+  font-size: xx-large;
+  color: #424b9b;
+}
+.card:hover {
+  opacity: 100%;
+  transition: 0.5s;
+}
+hr {
+  color: #424b9b;
+}
+
+.user-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-pages ul {
+  display: flex;
+  gap: 20px;
+  padding: 20px 20px 20px;
+  list-style: none;
+}
+
+.user-pages a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  position: relative;
+  font-size: 14px;
+  color: gainsboro;
+  background-color: #1e213e;
+  padding: 8px 8px;
+  border-radius: 10px;
+  opacity: 90%;
+}
+
+.user-pages a:hover {
+  color: #1e213e;
+  background-color: gainsboro;
+  transition: all 0.7s;
+}
+
+#contact {
+  display: flex;
+  padding: 80px 30px;
+  width: 100%;
+  justify-content: space-around;
+  color: white;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-bg {
+  background-color: #1e213e;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contacto h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 30px;
+}
+.info-areacontact {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.info-contact p {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+
+  font-family: "Martel Sans", sans-serif;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+iframe {
+  height: 350px;
+  width: 500px;
+}
+
+.footer-bg {
+  background-color: #424b9b;
+}
+
+footer {
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  padding: 35px 0;
+  font-size: 14px;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.nav i {
+  font-size: 26px;
+  display: none;
+  color: #424b9b;
+}
+
+#toggle-menu {
+  display: none;
+}
