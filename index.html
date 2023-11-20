@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B + V - Arq. Studio</title>
+    <title>PerfectSkin Argentina</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="/imgs/favicon-32x32.png" />
     <link
@@ -13,127 +13,118 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <label for="toggle-menu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="toggle-menu" />
-        <ul class="navbar">
-          <li><a class="navlinks" href="#hero">Home</a></li>
-          <li><a class="navlinks" href="#about">Nosotros</a></li>
-          <li><a class="navlinks" href="#cards-section">Servicios</a></li>
-          <li><a class="navlinks" href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="user-pages">
-      <ul>
-        <li><a class="login.html" href="login.html">Iniciar Sesión</a></li>
-        <li>
-          <a class="registro.html" href="registro.html">Registrarse</a>
-        </li>
-      </ul>
-    </div>
-    <hr />
-    <main>
-      <section id="hero">
-        <div class="h1">
-          <h1>B + V</h1>
-        </div>
-      </section>
-
-      <section id="about">
-        <p>
-          En B + V somos un equipo de profesionales apasionados por la
-          arquitectura y comprometidos en crear espacios innovadores y
-          funcionales que reflejen la visión y personalidad de nuestros
-          clientes. Con una combinación de creatividad, experiencia técnica y
-          atención al detalle, nos esforzamos por ofrecer diseños
-          arquitectónicos de calidad excepcional que superen las expectativas.
-          Valoramos la colaboración estrecha con nuestros clientes, trabajando
-          en conjunto para entender sus necesidades y traducirlas en soluciones
-          arquitectónicas únicas y personalizadas.
-        </p>
-      </section>
-
-      <section id="cards-section">
-        <h2>Nuestros Servicios</h2>
-        <hr />
-        <div class="cards-container">
-          <div class="card">
-            <img
-              src="./imgs/Diseño_sin_título-removebg-preview.png"
-              alt="imagen-card"
-            />
-            <h3>Diseño</h3>
-            <p>
-              Nuestra especialidad en diseño arquitectónico destaca por la
-              creación de espacios innovadores, con soluciones personalizadas
-              que cautivan los sentidos y mejoran la calidad de vida.
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./imgs/Diseño_sin_título__1_-removebg-preview.png"
-              alt="imagen-card"
-            />
-            <h3>Dirección de Obra</h3>
-            <p>
-              Nuestra trabajo en dirección de obra ejecutiva arquitectónica
-              garantiza la materialización impecable de cada proyecto,
-              supervisando cada detalle para lograr resultados excepcionales.
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./imgs/Diseño_sin_título__2_-removebg-preview.png"
-              alt="imagen-card"
-            />
-            <h3>Contruccion</h3>
-            <p>
-              Nuestra construcción arquitectónica se destaca por la excelencia
-              en la ejecución, con enfoque en detalles meticulosos y soluciones
-              innovadoras que resultan en espacios inspiradores y de alta
-              calidad.
-            </p>
-          </div>
-        </div>
-        <hr />
-      </section>
-      <section id="contact" class="contact-bg">
-        <div class="contacto">
-          <h2>¡Contactanos!</h2>
-          <div class="info-areacontact">
-            <div class="info-contact">
-              <p>
-                <i class="fa-regular fa-envelope" style="color: #bcc0c8"></i
-                >B+Varqstudio@gmail.com
-              </p>
-              <p>
-                <i class="fa-solid fa-location-dot" style="color: #bcc0c8"></i
-                >Moreno 3342, Mar del Plata, Argentina
-              </p>
-              <p>
-                <i class="fa-solid fa-phone" style="color: #bcc0c8"></i>(223)
-                423-4452
-              </p>
+    <div class="wrapper">
+      <aside>
+        <header>
+          <section id="hero">
+            <div class="h1">
+              <h1> Perfect - Skin.</h1>
             </div>
-          </div>
+            <hr>
+          </section>
+        </header>
+        <section id="about">
+          <p>
+            PerfectSkin, laboratorio dermatológico argentino, fusiona innovación
+             y compromiso con la salud cutánea. Nuestro equipo científico 
+             trabaja incansablemente para desarrollar soluciones avanzadas que aborden
+              las diversas necesidades de la piel en Argentina y más allá. Formulamos 
+              productos de calidad que reflejan nuestro profundo entendimiento de la piel,
+               aspirando a ser tu socio confiable en el camino hacia una piel saludable y radiante.
+          </p>
+        </section>
+        <nav>
+          <ul>
+            <li><button class="boton-menu boton-cat active" >Todos los productos</button></li>
+            <li><button class="boton-menu boton-cat">Limpiadores</button></li>
+            <li><button class="boton-menu boton-cat">Cremas Faciales</button></li>
+            <li><button class="boton menu boton-cat">Productos Corporales</button></li>
+            <li>
+              <a class="boton-carrito" href="/carrito.html">
+                <i class="fa-solid fa-cart-shopping" style="color: #d6c7ae"></i>
+                Carrito <span class="numero">0</span></a
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      
+      </aside>
+      <main>
+        
+
+        <h2 class="titulo1">Todos los productos</h2>
+        <div class="product-container">
+          <div class="producto">
+            <img class="imagen-producto" src="/imgs/_29b6943d-95be-4b97-817d-b05f1504ab97.jpg">
+            <div class="info-producto">
+              <h3 class="titulo-producto">Jabón corporal con extracto de Lilas</h3>
+              <p class="precio-producto">$5000</p>
+              <button class="añadir-carrito">Añadir al Carrito</button>
+            </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.10070128164!2d-57.559045023981376!3d-37.998111544596604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dea97eeac12b%3A0x79e7c8e272a07a03!2sMoreno%203342%2C%20B7600GHX%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1690411777453!5m2!1ses!2sar"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-    </main>
-    <footer class="footer-bg">
-      B + V Arq. Studio - Todos los derechos reservados - Mar del Plata,
-      Argentina -
-      <a href="#"
-        ><i class="fa-brands fa-instagram" style="color: #d7dce5"></i
-      ></a>
-    </footer>
+          <div class="producto">
+            <img class="imagen-producto" src="/imgs/_3642d20b-1ba2-4919-873b-319c11c78c83.jpg">
+            <div class="info-producto">
+              <h3 class="titulo-producto">Crema Facial con extracto de Lilas</h3>
+              <p class="precio-producto">$3000</p>
+              <button class="añadir-carrito">Añadir al Carrito</button>
+            </div>
+        </div>
+          <div class="producto">
+            <img class="imagen-producto" src="/imgs/_4c90e1df-5e5f-4395-960b-b15755339a5a.jpg">
+            <div class="info-producto">
+              <h3 class="titulo-producto">Limpiador corporal con extracto de Lilas</h3>
+              <p class="precio-producto">$10.000</p>
+              <button class="añadir-carrito">Añadir al Carrito</button>
+            </div>
+        </div>
+          <div class="producto">
+            <img class="imagen-producto" src="/imgs/_4dd086c1-abba-424e-a450-23af67b23cd8.jpg">
+            <div class="info-producto">
+              <h3 class="titulo-producto">Crema corporal con agua de rosas</h3>
+              <p class="precio-producto">$11.000</p>
+              <button class="añadir-carrito">Añadir al Carrito</button>
+            </div>
+         </div>
+        
+          <div class="producto">
+            <img class="imagen-producto" src="/imgs/_564dc496-9e10-4188-8639-01f137121f9e.jpg">
+            <div class="info-producto">
+              <h3 class="titulo-producto">Jabón facial con extracto de Lilas</h3>
+              <p class="precio-producto">$5000</p>
+              <button class="añadir-carrito">Añadir al Carrito</button>
+            </div>
+        </div>
+        
+          <div class="producto">
+            <img class="imagen-producto" src="/imgs/_6ce9fe1a-b6bd-4720-ae98-3c99ed6a2192.jpg">
+            <div class="info-producto">
+              <h3 class="titulo-producto">Crema facial con Agua de Rosas</h3>
+              <p class="precio-producto">$8000</p>
+              <button class="añadir-carrito">Añadir al Carrito</button>
+            </div>
+        </div>
+          <div class="producto">
+            <img class="imagen-producto" src="/imgs/_811d7ae1-3a70-4887-a3ba-8cff539bc4e5.jpg">
+            <div class="info-producto">
+              <h3 class="titulo-producto">Exfoliante corporal con extracto de Lilas</h3>
+              <p class="precio-producto">$15.000</p>
+              <button class="añadir-carrito">Añadir al Carrito</button>
+            </div>
+        </div>
+          <div class="producto">
+            <img class="imagen-producto" src="/imgs/_fbbc7dfe-2cb5-4639-b6e4-0ebcaab960e1.jpg">
+            <div class="info-producto">
+              <h3 class="titulo-producto">Limpiador facial con Agua de Rosas</h3>
+              <p class="precio-producto">$10.000</p>
+              <button class="añadir-carrito">Añadir al Carrito</button>
+            </div>
+        </div>
+          
+        </div>
+         
+      </main>
+  
+    </div>
   </body>
 </html>
