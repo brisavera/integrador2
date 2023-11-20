@@ -90,14 +90,62 @@ main {
 
 .titulo1 {
   color: #daddb1;
+  margin-bottom: 2rem;
 }
 
 .product-container {
   display: grid;
-  grid-template-columns: repeat(4 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
 .imagen-producto {
   max-width: 100%;
+  border-radius: 1rem;
+}
+
+.info-producto {
+  background-color: #d6c7ae;
+  font-family: "Raleway", sans-serif;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: -2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.titulo-producto {
+  font-size: 1rem;
+}
+
+.añadir-carrito {
+  color: #d6c7ae;
+  background-color: #4f473e;
+  padding: 4px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.añadir-carrito:hover {
+  background-color: #d6c7ae;
+  color: #4f473e;
+  transition-duration: 0.8s;
+}
+
+.boton-menu {
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  color: whitesmoke;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  padding: 0.2rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
 }
