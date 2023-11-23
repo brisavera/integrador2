@@ -1,222 +1,287 @@
-<div class="wrapper">
-  <aside>
-    <header>
-      <h1>PerfectSkin Argentina</h1>
-    </header>
-    <nav>
-      <ul>
-        <li>
-          <a class="volver-boton" href="./index.html">
-            <i class="fa-solid fa-arrow-left" style="color: #d6c7ae"></i>
-            Seguir comprando
-          </a>
-        </li>
-        <li>
-          <a class="boton-carrito active" href="./carrito.html">
-            <i class="fa-solid fa-cart-shopping" style="color: #d6c7ae"></i>
-            Carrito <span class="numero"></span
-          ></a>
-        </li>
-      </ul>
-    </nav>
-    <footer>
-      <p class="piedepagina">© Desarrollado by Brisa Vera Linares - 2023</p>
-    </footer>
-  </aside>
-  <main>
-    <h2 class="titulo1">Carrito</h2>
-    <div class="product-container">
-      <p class="none-carrito">Aún no agregaste un producto a tu carrito.</p>
-      <div class="carrito-productos">
-        <div class="carrito-producto">
-          <img src="./imgs/_29b6943d-95be-4b97-817d-b05f1504ab97.jpg" alt="" />
-          <div class="carrito-titulo">
-            <small>Título</small>
-            <h3>Jabón corporal con extracto de Lilas</h3>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARRITO - PerfectSkin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="/imgs/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside>
+        <header>
+          <section id="hero">
+            <div class="h1">
+              <h1>Perfect - Skin.</h1>
+            </div>
+            <hr />
+          </section>
+        </header>
+        <section id="about">
+          <p>
+            Estás a punto de acceder a productos diseñados con la ciencia más
+            avanzada para transformar y mejorar tu piel. Cada producto que
+            encuentres en tu carrito ha sido formulado con cuidado y precisión
+            para ofrecerte lo mejor en el cuidado de la piel. Prepárate para
+            experimentar una transformación que va más allá de la superficie:
+            una piel radiante, saludable y llena de vitalidad. ¡Gracias por
+            confiar en nosotros para potenciar la belleza natural de tu piel!
+          </p>
+        </section>
+        <nav>
+          <ul>
+            <li>
+              <a class="button-48 volver-boton" href="./index.html">
+                <i class="fa-solid fa-arrow-left" style="color: #423e38"></i>
+                Seguir comprando
+              </a>
+            </li>
+            <li>
+              <a class="button-48 carrito-button" href="/carrito.html">
+                <i class="fa-solid fa-cart-shopping" style="color: #423e38"></i>
+                Carrito</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <footer>
+          <p class="piedepagina">© Desarrollado by Brisa Vera Linares - 2023</p>
+        </footer>
+      </aside>
+      <main>
+        <h2 class="titulo1">Mi Carrito</h2>
+        <div class="product-container-carrito">
+          <p class="none-carrito">Aún no agregaste un producto a tu carrito.</p>
+          <div class="carrito-productos">
+            <div class="carrito-producto">
+              <img
+                class="carrito-producto-imagen"
+                src="./imgs/_29b6943d-95be-4b97-817d-b05f1504ab97.jpg"
+                alt=""
+              />
+              <div class="carrito-titulo">
+                <small>Título</small>
+                <h3>Jabón corporal extracto de Lilas</h3>
+              </div>
+              <div class="carrito-cantidad">
+                <small>Cantidad</small>
+                <p>1</p>
+              </div>
+              <div class="carrito-precio">
+                <small>Precio</small>
+                <p>$5000</p>
+              </div>
+              <div class="sub-total-carrito">
+                <small>Subtotal</small>
+                <p>$5000</p>
+              </div>
+              <button class="eliminar-producto">
+                <i class="fa-solid fa-trash" style="color: #630000"></i>
+              </button>
+            </div>
+            <div class="carrito-producto">
+              <img
+                class="carrito-producto-imagen"
+                src="/imgs/_3642d20b-1ba2-4919-873b-319c11c78c83.jpg"
+                alt=""
+              />
+              <div class="carrito-titulo">
+                <small>Título</small>
+                <h3>Crema facial extracto de Lilas</h3>
+              </div>
+              <div class="carrito-cantidad">
+                <small>Cantidad</small>
+                <p>1</p>
+              </div>
+              <div class="carrito-precio">
+                <small>Precio</small>
+                <p>$3000</p>
+              </div>
+              <div class="sub-total-carrito">
+                <small>Subtotal</small>
+                <p>$3000</p>
+              </div>
+              <button class="eliminar-producto">
+                <i class="fa-solid fa-trash" style="color: #630000"></i>
+              </button>
+            </div>
+            <div class="carrito-producto">
+              <img
+                class="carrito-producto-imagen"
+                src="/imgs/_4c90e1df-5e5f-4395-960b-b15755339a5a.jpg"
+                alt=""
+              />
+              <div class="carrito-titulo">
+                <small>Título</small>
+                <h3>Gel extracto de Lilas</h3>
+              </div>
+              <div class="carrito-cantidad">
+                <small>Cantidad</small>
+                <p>1</p>
+              </div>
+              <div class="carrito-precio">
+                <small>Precio</small>
+                <p>$10.000</p>
+              </div>
+              <div class="sub-total-carrito">
+                <small>Subtotal</small>
+                <p>$10.000</p>
+              </div>
+              <button class="eliminar-producto">
+                <i class="fa-solid fa-trash" style="color: #630000"></i>
+              </button>
+            </div>
+            <div class="carrito-producto">
+              <img
+                class="carrito-producto-imagen"
+                src="/imgs/_4dd086c1-abba-424e-a450-23af67b23cd8.jpg"
+                alt=""
+              />
+              <div class="carrito-titulo">
+                <small>Título</small>
+                <h3>Crema corporal agua de rosas</h3>
+              </div>
+              <div class="carrito-cantidad">
+                <small>Cantidad</small>
+                <p>1</p>
+              </div>
+              <div class="carrito-precio">
+                <small>Precio</small>
+                <p>$11.000</p>
+              </div>
+              <div class="sub-total-carrito">
+                <small>Subtotal</small>
+                <p>$11.000</p>
+              </div>
+              <button class="eliminar-producto">
+                <i class="fa-solid fa-trash" style="color: #630000"></i>
+              </button>
+            </div>
+            <div class="carrito-producto">
+              <img
+                class="carrito-producto-imagen"
+                src="/imgs/_564dc496-9e10-4188-8639-01f137121f9e.jpg"
+                alt=""
+              />
+              <div class="carrito-titulo">
+                <small>Título</small>
+                <h3>Jabón facial extracto de Lilas</h3>
+              </div>
+              <div class="carrito-cantidad">
+                <small>Cantidad</small>
+                <p>1</p>
+              </div>
+              <div class="carrito-precio">
+                <small>Precio</small>
+                <p>$5000</p>
+              </div>
+              <div class="sub-total-carrito">
+                <small>Subtotal</small>
+                <p>$5000</p>
+              </div>
+              <button class="eliminar-producto">
+                <i class="fa-solid fa-trash" style="color: #630000"></i>
+              </button>
+            </div>
+            <div class="carrito-producto">
+              <img
+                class="carrito-producto-imagen"
+                src="/imgs/_6ce9fe1a-b6bd-4720-ae98-3c99ed6a2192.jpg"
+                alt=""
+              />
+              <div class="carrito-titulo">
+                <small>Título</small>
+                <h3>Crema facial Agua de Rosas</h3>
+              </div>
+              <div class="carrito-cantidad">
+                <small>Cantidad</small>
+                <p>1</p>
+              </div>
+              <div class="carrito-precio">
+                <small>Precio</small>
+                <p>$8000</p>
+              </div>
+              <div class="sub-total-carrito">
+                <small>Subtotal</small>
+                <p>$8000</p>
+              </div>
+              <button class="eliminar-producto">
+                <i class="fa-solid fa-trash" style="color: #630000"></i>
+              </button>
+            </div>
+            <div class="carrito-producto">
+              <img
+                class="carrito-producto-imagen"
+                src="/imgs/_811d7ae1-3a70-4887-a3ba-8cff539bc4e5.jpg"
+                alt=""
+              />
+              <div class="carrito-titulo">
+                <small>Título</small>
+                <h3>Exfoliante Corporal</h3>
+              </div>
+              <div class="carrito-cantidad">
+                <small>Cantidad</small>
+                <p>1</p>
+              </div>
+              <div class="carrito-precio">
+                <small>Precio</small>
+                <p>$15.000</p>
+              </div>
+              <div class="sub-total-carrito">
+                <small>Subtotal</small>
+                <p>$15.000</p>
+              </div>
+              <button class="eliminar-producto">
+                <i class="fa-solid fa-trash" style="color: #630000"></i>
+              </button>
+            </div>
+            <div class="carrito-producto">
+              <img
+                class="carrito-producto-imagen"
+                src="/imgs/_fbbc7dfe-2cb5-4639-b6e4-0ebcaab960e1.jpg"
+                alt=""
+              />
+              <div class="carrito-titulo">
+                <small>Título</small>
+                <h3>Limpiador facial Agua de Rosas</h3>
+              </div>
+              <div class="carrito-cantidad">
+                <small>Cantidad</small>
+                <p>1</p>
+              </div>
+              <div class="carrito-precio">
+                <small>Precio</small>
+                <p>$10.000</p>
+              </div>
+              <div class="sub-total-carrito">
+                <small>Subtotal</small>
+                <p>$10.000</p>
+              </div>
+              <button class="eliminar-producto">
+                <i class="fa-solid fa-trash" style="color: #630000"></i>
+              </button>
+            </div>
           </div>
-          <div class="carrito-cantidad">
-            <small>Cantidad</small>
-            <p>1</p>
-          </div>
-          <div class="carrito-precio">
-            <small>Precio</small>
-            <p>$5000</p>
-          </div>
-          <div class="sub-total-carrito">
-            <small>Subtotal</small>
-            <p>$5000</p>
-          </div>
-          <button class="eliminar-producto">
-            <i class="fa-solid fa-trash" style="color: #d6c7ae"></i>
-          </button>
         </div>
-        <div class="carrito-producto">
-          <img src="/imgs/_3642d20b-1ba2-4919-873b-319c11c78c83.jpg" alt="" />
-          <div class="carrito-titulo">
-            <small>Título</small>
-            <h3>Crema facial con extracto de Lilas</h3>
+        <div class="carrito-opciones">
+          <div class="izquierda-carrito">
+            <button class="vaciar-carrito">Vaciar carrito</button>
           </div>
-          <div class="carrito-cantidad">
-            <small>Cantidad</small>
-            <p>1</p>
+          <div class="derecha-carrito">
+            <div class="monto-total">
+              <p>Total</p>
+              <p id="total">$5000</p>
+            </div>
+            <button class="carrito-comprar">Comprar</button>
           </div>
-          <div class="carrito-precio">
-            <small>Precio</small>
-            <p>$3000</p>
-          </div>
-          <div class="sub-total-carrito">
-            <small>Subtotal</small>
-            <p>$3000</p>
-          </div>
-          <button class="eliminar-producto">
-            <i class="fa-solid fa-trash" style="color: #d6c7ae"></i>
-          </button>
         </div>
-        <div class="carrito-producto">
-          <img src="/imgs/_4c90e1df-5e5f-4395-960b-b15755339a5a.jpg" alt="" />
-          <div class="carrito-titulo">
-            <small>Título</small>
-            <h3>Limpiador corporal con extracto de Lilas</h3>
-          </div>
-          <div class="carrito-cantidad">
-            <small>Cantidad</small>
-            <p>1</p>
-          </div>
-          <div class="carrito-precio">
-            <small>Precio</small>
-            <p>$10.000</p>
-          </div>
-          <div class="sub-total-carrito">
-            <small>Subtotal</small>
-            <p>$10.000</p>
-          </div>
-          <button class="eliminar-producto">
-            <i class="fa-solid fa-trash" style="color: #d6c7ae"></i>
-          </button>
-        </div>
-        <div class="carrito-producto">
-          <img src="/imgs/_4dd086c1-abba-424e-a450-23af67b23cd8.jpg" alt="" />
-          <div class="carrito-titulo">
-            <small>Título</small>
-            <h3>Crema corporal con agua de rosas</h3>
-          </div>
-          <div class="carrito-cantidad">
-            <small>Cantidad</small>
-            <p>1</p>
-          </div>
-          <div class="carrito-precio">
-            <small>Precio</small>
-            <p>$11.000</p>
-          </div>
-          <div class="sub-total-carrito">
-            <small>Subtotal</small>
-            <p>$11.000</p>
-          </div>
-          <button class="eliminar-producto">
-            <i class="fa-solid fa-trash" style="color: #d6c7ae"></i>
-          </button>
-        </div>
-        <div class="carrito-producto">
-          <img src="/imgs/_564dc496-9e10-4188-8639-01f137121f9e.jpg" alt="" />
-          <div class="carrito-titulo">
-            <small>Título</small>
-            <h3>Jabón facial con extracto de Lilas</h3>
-          </div>
-          <div class="carrito-cantidad">
-            <small>Cantidad</small>
-            <p>1</p>
-          </div>
-          <div class="carrito-precio">
-            <small>Precio</small>
-            <p>$5000</p>
-          </div>
-          <div class="sub-total-carrito">
-            <small>Subtotal</small>
-            <p>$5000</p>
-          </div>
-          <button class="eliminar-producto">
-            <i class="fa-solid fa-trash" style="color: #d6c7ae"></i>
-          </button>
-        </div>
-        <div class="carrito-producto">
-          <img src="/imgs/_6ce9fe1a-b6bd-4720-ae98-3c99ed6a2192.jpg" alt="" />
-          <div class="carrito-titulo">
-            <small>Título</small>
-            <h3>Crema facial con Agua de Rosas</h3>
-          </div>
-          <div class="carrito-cantidad">
-            <small>Cantidad</small>
-            <p>1</p>
-          </div>
-          <div class="carrito-precio">
-            <small>Precio</small>
-            <p>$8000</p>
-          </div>
-          <div class="sub-total-carrito">
-            <small>Subtotal</small>
-            <p>$8000</p>
-          </div>
-          <button class="eliminar-producto">
-            <i class="fa-solid fa-trash" style="color: #d6c7ae"></i>
-          </button>
-        </div>
-        <div class="carrito-producto">
-          <img src="/imgs/_811d7ae1-3a70-4887-a3ba-8cff539bc4e5.jpg" alt="" />
-          <div class="carrito-titulo">
-            <small>Título</small>
-            <h3>Exfoliante corporal con extracto de Lilas</h3>
-          </div>
-          <div class="carrito-cantidad">
-            <small>Cantidad</small>
-            <p>1</p>
-          </div>
-          <div class="carrito-precio">
-            <small>Precio</small>
-            <p>$15.000</p>
-          </div>
-          <div class="sub-total-carrito">
-            <small>Subtotal</small>
-            <p>$15.000</p>
-          </div>
-          <button class="eliminar-producto">
-            <i class="fa-solid fa-trash" style="color: #d6c7ae"></i>
-          </button>
-        </div>
-        <div class="carrito-producto">
-          <img src="/imgs/_fbbc7dfe-2cb5-4639-b6e4-0ebcaab960e1.jpg" alt="" />
-          <div class="carrito-titulo">
-            <small>Título</small>
-            <h3>Limpiador facial con Agua de Rosas</h3>
-          </div>
-          <div class="carrito-cantidad">
-            <small>Cantidad</small>
-            <p>1</p>
-          </div>
-          <div class="carrito-precio">
-            <small>Precio</small>
-            <p>$10.000</p>
-          </div>
-          <div class="sub-total-carrito">
-            <small>Subtotal</small>
-            <p>$10.000</p>
-          </div>
-          <button class="eliminar-producto">
-            <i class="fa-solid fa-trash" style="color: #d6c7ae"></i>
-          </button>
-        </div>
-      </div>
+      </main>
     </div>
-    <div class="carrito-opciones">
-      <div class="derecha-carrito">
-        <button class="vaciar-carrito">Vaciar carrito</button>
-      </div>
-      <div class="izquierda-carrito">
-        <div class="monto-total">
-          <p>Total</p>
-          <p id="total">$5000</p>
-        </div>
-        <button class="carrito-comprar">Comprar</button>
-      </div>
-    </div>
-  </main>
-</div>
+  </body>
+</html>
