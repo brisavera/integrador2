@@ -91,13 +91,19 @@ const productos = [
   },
 ];
 
-const containerProductos = document.querySelector("#product-container");
-function cargarProductos() {
-  productos.forEach((producto) => {
+const contenedorProductos = document.querySelector("#contenedor-productos");
+const botonesMenu = document.querySelectorAll(".boton-menu");
+const homeTitulo = document.querySelector("#primer-titulo");
+let botonesCarrito = document.querySelector(".añadir-carrito");
+const numero = document.querySelector("number");
+
+function cargarProductos(productosMenu) {
+  contenedorProductos.innerHTML = "";
+
+  productosMenu.forEach((producto) => {
     const div = document.createElement("div");
     div.classList.add("producto");
-    div.innerHTML`  
-     <div class="producto">
+    div.innerHTML = `  
     <img
       class="imagen-producto"
       src="${producto.imagen}"
@@ -105,10 +111,68 @@ function cargarProductos() {
     />
     <div class="info-producto">
       <h3 class="titulo-producto">${producto.titulo}</h3>
-      <p class="precio-producto">${producto.precio}</p>
-      <button class="añadir-carrito"> id= "${producto.id} </button>
+      <p class="precio-producto">
+      $${producto.precio}</p>
+      <button class="añadir-carrito" id= "${producto.id}">Añadir al carrito</button>
     </div>
-
     `;
+    contenedorProductos.append(div);
   });
+  actualizarBotonesCarrito();
+}
+
+cargarProductos(productos);
+
+botonesMenu.forEach((boton) => {
+  boton.addEventListener("click", (e) => {
+    if (e.currentTarget.id != "todos") {
+      const productoCategoria = productos.find(
+        (producto) => producto.categoria.id === e.currentTarget.id
+      );
+
+      homeTitulo.innerText = productoCategoria.categoria.nombre;
+
+      const productosMenu = productos.filter(
+        (producto) => producto.categoria.id === e.currentTarget.id
+      );
+
+      cargarProductos(productosMenu);
+    } else {
+      homeTitulo.innerText = "Todos los productos";
+      cargarProductos(productos);
+    }
+  });
+});
+
+function actualizarBotonesCarrito() {
+  añadirCarrito = document.querySelectorAll(".añadir-carrito");
+
+  añadirCarrito.forEach((boton) => {
+    boton.addEventListener("click", agregarAlCarrito);
+  });
+}
+
+const productosAñadidosCarrito = [];
+function agregarAlCarrito(e) {
+  const idBoton = e.currentTarget.id;
+  const productoAñadido = productos.find((producto) => producto.id === idBoton);
+  acc;
+  if (productosAñadidosCarrito.some((producto) => producto.id === idBoton)) {
+    const index = productosAñadidosCarrito.findIndex(
+      (producto) => producto.id === idBoton
+    );
+    productosAñadidosCarrito[index].cantidad++;
+  } else {
+    productoAñadido.cantidad = 1;
+    productosAñadidosCarrito.push(productoAñadido);
+  }
+  actualizarNumber();
+}
+
+function actualizarNumber() {
+  let sumaNumber = productosAñadidosCarrito.reduce(
+    (acc, producto) => acc + producto.cantidad,
+    0
+  );
+  numero.innerText = sumaNumber;
 }

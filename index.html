@@ -37,20 +37,30 @@
         <nav>
           <ul>
             <li>
-              <button class="button-48 boton-menu">Todos los productos</button>
-            </li>
-            <li><button class="button-48 boton-menu">Limpiadores</button></li>
-            <li>
-              <button class="button-48 boton-menu">Cremas Faciales</button>
+              <button id="todos" class="button-48 boton-menu">
+                Todos los productos
+              </button>
             </li>
             <li>
-              <button class="button-48 boton-menu">Productos Corporales</button>
+              <button id="limpiadores" class="button-48 boton-menu">
+                Limpiadores
+              </button>
+            </li>
+            <li>
+              <button id="faciales" class="button-48 boton-menu">
+                Cremas Faciales
+              </button>
+            </li>
+            <li>
+              <button id="corporales" class="button-48 boton-menu">
+                Productos Corporales
+              </button>
             </li>
             <li>
               <a class="button-48 boton-carrito" href="/carrito.html">
                 <i class="fa-solid fa-cart-shopping" style="color: #423e38"></i>
-                Carrito <span class="numero">0</span></a
-              >
+                Carrito <span id="number" class="numero">0</span
+              ></a>
             </li>
           </ul>
         </nav>
@@ -59,121 +69,10 @@
         </footer>
       </aside>
       <main>
-        <h2 class="titulo1">Todos los productos</h2>
-        <div id="product-container" class="product-container">
-          <div class="producto">
-            <img
-              class="imagen-producto"
-              src="/imgs/corporales/corporal1.jpg"
-              alt="imagencorporal1"
-            />
-            <div class="info-producto">
-              <h3 class="titulo-producto">
-                Jabón corporal con extracto de Lilas
-              </h3>
-              <p class="precio-producto">$5000</p>
-              <button class="añadir-carrito">Añadir al Carrito</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="imagen-producto"
-              src="/imgs/faciales/facial1.jpg"
-              alt="imagenfacial1
-            "
-            />
-            <div class="info-producto">
-              <h3 class="titulo-producto">
-                Crema Facial con extracto de Lilas
-              </h3>
-              <p class="precio-producto">$3000</p>
-              <button class="añadir-carrito">Añadir al Carrito</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="imagen-producto"
-              src="/imgs/corporales/corporal2.jpg"
-              alt="imagencorporal2"
-            />
-            <div class="info-producto">
-              <h3 class="titulo-producto">
-                Limpiador corporal con extracto de Lilas
-              </h3>
-              <p class="precio-producto">$10.000</p>
-              <button class="añadir-carrito">Añadir al Carrito</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="imagen-producto"
-              src="/imgs/corporales/corporal3.jpg"
-              alt="imagencorporal3"
-            />
-            <div class="info-producto">
-              <h3 class="titulo-producto">Crema corporal con agua de rosas</h3>
-              <p class="precio-producto">$11.000</p>
-              <button class="añadir-carrito">Añadir al Carrito</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img
-              class="imagen-producto"
-              src="/imgs/limpiadores/limpiador1.jpg"
-              alt="imagenlimp1"
-            />
-            <div class="info-producto">
-              <h3 class="titulo-producto">
-                Jabón facial con extracto de Lilas
-              </h3>
-              <p class="precio-producto">$5000</p>
-              <button class="añadir-carrito">Añadir al Carrito</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img
-              class="imagen-producto"
-              src="/imgs/faciales/facial2.jpg"
-              alt="imagenfacial2"
-            />
-            <div class="info-producto">
-              <h3 class="titulo-producto">Crema facial con Agua de Rosas</h3>
-              <p class="precio-producto">$8000</p>
-              <button class="añadir-carrito">Añadir al Carrito</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="imagen-producto"
-              src="/imgs/corporales/corporal4.jpg"
-              alt="imagencorporal4"
-            />
-            <div class="info-producto">
-              <h3 class="titulo-producto">
-                Exfoliante corporal con extracto de Lilas
-              </h3>
-              <p class="precio-producto">$15.000</p>
-              <button class="añadir-carrito">Añadir al Carrito</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="imagen-producto"
-              src="/imgs/limpiadores/limpiador2.jpg"
-              alt="imagenlimp2"
-            />
-            <div class="info-producto">
-              <h3 class="titulo-producto">
-                Limpiador facial con Agua de Rosas
-              </h3>
-              <p class="precio-producto">$10.000</p>
-              <button class="añadir-carrito">Añadir al Carrito</button>
-            </div>
-          </div>
-        </div>
+        <h2 class="titulo1" id="primer-titulo">Todos los productos</h2>
+        <div id="contenedor-productos" class="product-container"></div>
       </main>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
